@@ -4,67 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Meeple Mind Games</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
-        <nav>
+        <div class="flex inner-container">
             <img src="img/meeple-mind-games-logo.png" alt="Meeple Mind Games Logo">
-            <ul>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
             <a href="#" class="btn">Sign In</a>
-        </nav>
+        </div>
     </header>
 
-    <main class="inner-container">
-        <section class="hero-banner">
-            <h1>Meeple Mind Games</h1>
-            <p>Your Next Game Night Starts Here! Come check out our cozy tabletop hub, packed with games, snacks, and great company.</p>
-            <a href="#" class="btn">Find our Location</a>
-
-            <div class="content">
-                <img src="img/monopoly-game.png" alt="Monopoly Game">
-                <h2>Upcoming Game Night: Saturday at 7PM!</h2>
-                <p>Join us for an epic evening of strategy, snacks, and social fun! Whether you're a seasoned gamer or just meeple-curious, there's a seat at the table for you.</p>
-                <a href="#">Register Now ></a>
+    <main>
+        <section>
+            <div class="hero-banner">
+                <div class="flex inner-container">
+                    <div>
+                        <h1>Meeple Mind Games</h1>
+                        <a href="#" class="btn">Find our Location</a>
+                    </div>
+                    <p>Your Next Game Night Starts Here! Come check out our cozy tabletop hub, packed with games,
+                        snacks,and
+                        great company.</p>
+                </div>
             </div>
 
-            <div class="second-content">
-                <h2>Sign up for our Newsletter</h2>
-                <p>Keep up to date on new products and promotions.</p>
-            </div>
-
-            <div class="second-content">
-                <h2>Magic: the Gathering</h2>
-                <a href="#">Pre-order Now ></a>
-            </div>
-
-            <div class="second-content">
-                <h2>Events</h2>
-                <p>Check back often to see our special events!</p>
-            </div>
-
-            <div class="games">
-                <h2>Newest Games</h2>
-                <img src="img/block-and-key-game.png" alt="Block and Key Game">
-                <p>Block and Key</p>
-                <img src="img/twisted-cryptids.png" alt="Twisted Cryptids Game">
-                <p>Twisted Cryptids</p>
-                <img src="img/takenokolor.png" alt="Takenokolor Game">
-                <p>Takenokolor</p>
+            <div class="main flex inner-container">
+                <div>
+                    <section>
+                        <img src="img/monopoly-game.png" alt="Monopoly Game">
+                        <div class="content">
+                            <div>
+                                <h2>Upcoming Game Night: Saturday at 7PM!</h2>
+                                <p>Join us for an epic evening of strategy, snacks, and social fun! Whether you're a
+                                    seasoned
+                                    gamer or just meeple-curious, there's a seat at the table for you.</p>
+                            </div>
+                            <a class="action" href="#">Register Now ></a>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="second-content">
+                            <h2>Sign up for our Newsletter</h2>
+                            <p>Keep up to date on new products and promotions.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="second-content">
+                            <h2>Magic: the Gathering</h2>
+                            <a href="#">Pre-order Now ></a>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="second-content">
+                            <h2>Events</h2>
+                            <p>Check back often to see our special events!</p>
+                        </div>
+                    </section>
+                </div>
+                <aside class="flex games">
+                    <h2>Newest Games</h2>
+                    <div>
+                        <img src="img/block-and-key-game.png" alt="Block and Key Game">
+                        <p>Block and Key</p>
+                    </div>
+                    <div>
+                        <img src="img/twisted-cryptids.png" alt="Twisted Cryptids Game">
+                        <p>Twisted Cryptids</p>
+                    </div>
+                    <div>
+                        <img src="img/takenokolor.png" alt="Takenokolor Game">
+                        <p>Takenokolor</p>
+                    </div>
+                </aside>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2026 Meeple Mind Games. This website is for educational purposes only.  All content is fictional and created for learning and demonstration.</p>
-        <cite>OpenAI. (2025). ChatGPT (August 5 version) [Large language model]. https://chat.openai.com. Logo concept and image generated using ChatGPT, based on user-provided design prompts.</cite>
+    <footer class="bg">
+        <div class="flex inner-container">
+            <p>© 2026 Meeple Mind Games. This website is for educational purposes only. All content is fictional and
+                created
+                for learning and demonstration.</p>
+            <p>OpenAI. (2025). ChatGPT (August 5 version) [Large language model]. https://chat.openai.com. Logo concept
+                and image generated using ChatGPT, based on user-provided design prompts.</p>
+        </div>
     </footer>
 </body>
 

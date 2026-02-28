@@ -6,10 +6,212 @@
     --p-and-h1-hero-banner-text-color: #F8FAFC;
     --headings-and-body-text: Arial, Helvetica, sans-serif;
     --hbbg: #005A8F;
-    --container-background-color: #FFFFFF;
+    --header-background-color: #FFFFFF;
     --footer-background-color: #002439;
     --link-color: #BD3A5A;
     --link-hover-color: #84283F;
     --link-text-size: 1.375rem;
 }
 
+.flex {
+    display: flex;
+}
+
+header {
+    background-color: var(--header-background-color);
+    font-size: 1.25rem;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div nav ul {
+    display: flex;
+    gap: 1.875rem;
+}
+
+header div nav ul li a {
+    text-decoration: none;
+    font-size: var(--link-text-size);
+}
+
+header div nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--link-hover-color);
+}
+
+header div>a {
+    background-color: var(--link-color);
+    text-decoration: none;
+    color: var(--p-and-h1-hero-banner-text-color);
+    padding: .75rem 1rem;
+    font-size: var(--link-text-size);
+}
+
+header div>a:hover {
+    background-color: var(--link-hover-color);
+}
+
+.inner-container {
+    max-width: 1310px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #F1F5F9;
+    font-family: var(--headings-and-body-text);
+}
+
+.hero-banner {
+    background-color: var(--hbbg);
+    color: var(--p-and-h1-hero-banner-text-color);
+    display: flex;
+    padding: 5.0625rem;
+    align-items: center;
+}
+
+.hero-banner div {
+    flex: 1 2 30%;
+}
+
+.hero-banner div h1 {
+    padding-bottom: 1.6875rem;
+    gap: 2.125rem;
+}
+
+.hero-banner p {
+    flex: 2 1 70%
+}
+
+.hero-banner h1 {
+    font-size: var(--h1);
+}
+
+.hero-banner div p {
+    font-size: var(--p-hero-banner);
+    padding: 1.35rem;
+}
+
+.hero-banner a {
+    border: 1px solid white;
+    text-decoration: none;
+    color: var(--p-and-h1-hero-banner-text-color);
+    padding: .75rem 1rem;
+    font-size: var(--link-text-size);
+
+}
+
+.hero-banner a:hover {
+    background-color: white;
+    color: var(--hbbg);
+    border: 1px solid white;
+}
+
+h2 {
+    font-size: var(--h2);
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    background-color: #FFFFFF;
+    gap: 2.13rem;
+    align-items: center;
+    padding: 1.69rem;
+    width: 53.875rem;
+}
+
+.action {
+    display: block;
+    text-align: center;
+}
+
+.content > * {
+    flex: 1 1 0;
+}
+
+.content div {
+    flex-grow: 2;
+}
+.content p {
+    font-size: var(--p);
+}
+
+.content a {
+    font-size: var(--link-text-size);
+    font-weight: bold;
+    color: var(--link-color);
+}
+
+.second-content{
+    background-color: #FFFFFF;
+    padding: 1.69rem;
+    margin-top: 3.38rem;
+    margin-bottom: 3.37rem;
+}
+
+.second-content > * {
+    flex: 1 1 0;
+}
+
+.second-content p {
+    font-size: var(--p);
+}
+
+
+.second-content a {
+    font-size: var(--link-text-size);
+    font-weight: bold;
+    color: var(--link-color);
+}
+
+.games {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 1.69rem;
+    margin-left: 2.13rem;
+    margin-bottom: 29.44rem;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.games > * {
+    flex: 1 1 0;
+}
+
+.games div {
+    flex-grow: 2;
+}
+
+.games div:first-of-type {
+    padding: 3.38rem;
+}
+
+.games div:nth-of-type(2) {
+    padding-bottom: 3.38rem;
+}
+
+.bg {
+    display: flex;
+    padding: 3.38rem;
+    gap: 2.13rem;
+    background-color: var(--footer-background-color);
+    color: var(--p-and-h1-hero-banner-text-color);
+    font-size: 1rem;
+}
+
+.bg p:first-of-type {
+    padding-right: 2.13rem;
+}
+
+.bg p:last-of-type {
+    padding-right: 6.30rem;
+}
